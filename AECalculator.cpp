@@ -61,8 +61,12 @@ int countDifferingBits(const bitset<32>& hash1, const bitset<32>& hash2) {
     return (hash1 ^ hash2).count();
 }
 
-int main() {
-    ifstream inputFile("Hashin0.txt");
+int main(int argc, char* argv[]) {
+    if (argc != 2) {
+        cerr << "Usage: ./AECalculator <input_file>" << endl;
+        return 1;
+    }
+    ifstream inputFile(argv[1]);
     if (!inputFile) {
         cerr << "Error: Cannot open input file!" << endl;
         return 1;
