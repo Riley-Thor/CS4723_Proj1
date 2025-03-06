@@ -8,18 +8,28 @@ This repository contains two C++ programs, `AECalculator.cpp` and `MTUHash.cpp`,
 ## Compilation
 To compile both programs, use g++:
 
-`$ g++ -o MTUHash MTUHash.cpp`
+```console
+g++ -o MTUHash MTUHash.cpp
+```
 
-`$ g++ -o AECalculator AECalculator.cpp`
+```console
+g++ -o AECalculator AECalculator.cpp
+```
 
 ## Usage
 ### Running MTUHash
-`$ ./MTUHash <input_file>`
+```console
+./MTUHash <input_file>
+```
+
 - `<input_file>` should contain a 32-bit binary string.
 - Outputs an intermediate hash to `Out1.txt` and final hash to `OutFinal.txt`.
 
 ### Running AECalculator
-`$ ./AECalculator <input_file>`
+```console
+./AECalculator <input_file>
+```
+
 - `input_file` should contain a 32-bit binary string.
 - Computes the Avalanche Effect Rate (AFR) and writes it to `AFR.txt`.
 
